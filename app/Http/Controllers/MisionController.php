@@ -15,7 +15,7 @@ class MisionController extends Controller
         $misionmapping = $mision->map(function ($mision) {
             return [
                 $mision,
-                'objectives' => $mision->objectives
+                $mision->objectives
             ];
         });
 
